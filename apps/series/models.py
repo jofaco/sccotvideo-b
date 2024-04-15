@@ -5,6 +5,7 @@ class Serie(models.Model):
     serie = models.CharField('Nombre de la serie', max_length=100)
     description = models.TextField('Descripción de la serie')
     quantity = models.IntegerField('Cantidad de videos', default=0)
+    featured_image = models.TextField('Imagen de la serie', default='')
 
 
     class Meta:

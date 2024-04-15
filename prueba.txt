@@ -1,0 +1,285 @@
++-----+--------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+
+| id  | titulo                                                                                                                                                       | curso_id |
++-----+--------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+
+| 385 | Necrosis avascular bilateral de la cabeza femoral  secuela de COVID-19, Reporte de Caso                                                                      |       10 |
+| 386 | Cambios en el manejo de  tendinitis calcificante de hombro  desde la aparición de la técnica de Barbotage                                                    |       10 |
+| 387 | SUPERVIVENCIA Y RESULTADOS A LARGO PLAZO DE PRÓTESIS DE RODILLA PRIMARIA CEMENTADA CON MÁS DE 20 AÑOS DE SEGUIMIENTO                                         |       10 |
+| 388 | SUPERVIVENCIA Y RESULTADOS A LARGO PLAZO DE PRÓTESIS DE RODILLA PRIMARIA CEMENTADA CON MÁS DE 20 AÑOS DE SEGUIMIENTO                                         |       10 |
+| 389 | SUPERVIVENCIA Y RESULTADOS A LARGO PLAZO DE PRÓTESIS DE RODILLA PRIMARIA CEMENTADA CON MÁS DE 20 AÑOS DE SEGUIMIENTO                                         |       10 |
+| 399 | Guia para  rehabilitacion del paciente  posterior a fracturas de radio distal                                                                                |       10 |
+| 400 | Desenlaces funcionales de artrodesis de tobillo mediante clavo retrogrado endomedular en la clinica Universidad de La Sabana                                 |       10 |
+| 401 | SINDACTILIA 5º DEDO DE PIE: REVISIÓN DE CONCEPTOS Y PRESENTACIÓN DE CASO CLÍNICO EN NUESTRO CENTRO                                                           |       10 |
+| 402 | Proloterapia con dextrosa al 25% como intervencionismo analgésico en fascitis plantar                                                                        |       10 |
+| 403 | Síndrome de embolia grasa secundario a fracturas de huesos cortos                                                                                            |       10 |
+| 404 | Luxación traumática de cadera antero inferior. Un reporte de caso                                                                                            |       10 |
+| 405 | Lanzamiento de libro: Técnicas en cirugía de cadera. (Dpto. Ortopedia y Traumatología - Pontificia Universidad Javeriana, sede Bogotá)                       |       10 |
+| 406 | Fracturas Geriátricas de Fémur Distal: Complicaciones y Mortalidad a Nueve Años, Un Análisis Retrospectivo                                                   |       10 |
+| 407 | Desenlaces en pacientes con no unión recalcitrante de fémur distal manejadas con una técnica quirúrgica.                                                     |       10 |
+| 408 | Rehabilitación de fracturas de radio distal con órtesis robóticas                                                                                            |       10 |
+| 409 | Rehabilitación de fracturas de mano con ortesis robóticas                                                                                                    |       10 |
+| 411 | Extensor Digitorum Brevis Manus presentado como diagnóstico diferencial de un ganglión del dorso de la mano                                                  |       10 |
+| 412 | AMPUTACIÓN GUIADA POR VERDE INDOCIANINA: COMO SER OBJETIVOS PARA DETERMINAR EL NIVEL AMPUTACIÓN DURANTE EL INTRAOPERATORIO                                   |       10 |
+| 413 | Caracterización de pacientes con pie equino varo congénito atendidos entre 2016 y 2021 en un hospital del departamento de Tolima – Colombia.                 |       10 |
+| 414 | CONDROMATOSIS SINOVIAL DE RODILLA REPORTE DE CASOS                                                                                                           |       10 |
+| 417 | Manejo de fracturas conminutas de espinas tibiales por avulsión en el paciente adolescente: Sutura como mecanismo de fijación                                |       10 |
+| 418 | Manejo mínimamente invasivo en Fracturas de tibia proximal Salter Harris IV en paciente pediátrico, Reporte de caso.                                         |       10 |
+| 419 | ROTURA DEL ESCUDO FEMORAL EN PRÓTESIS TOTAL DE RODILLA                                                                                                       |       10 |
+| 423 | Técnica original de aumentación en ruptura traumática del tendón patelar, reporte de caso                                                                    |       10 |
+| 424 | Pie equino varo secundario a picadura por alacrán, reporte de caso.                                                                                          |       10 |
+| 425 | OSTEOSÍNTESIS DE RÓTULA CON SUPER SUTURAS: CAMBIANDO EL PARADIGMA DE BANDA DE TENSIÓN                                                                        |       10 |
+| 426 | Luxación irreductible de rodilla asociado a interposición de estructuras mediales: un reporte de caso.                                                       |       10 |
+| 427 | Anquilosis de cadera: un reporte de caso debido a osificación heterotópica                                                                                   |       10 |
+| 428 | SARCOMA DE EWING ESCAPULAR EN PACIENTE PEDIATRICO, RETO DIAGNOSTICO Y QUIRURGICO. PRESENTACIÓN DE CASO                                                       |       10 |
+| 429 | Fijación externa en cirugía control daño para fracturas complejas de falanges y metacarpianos                                                                |       10 |
+| 430 | Fijación externa en cirugía control daño para fracturas complejas de falanges y metacarpianos                                                                |       10 |
+| 431 | pseudo tumor hemofílico, a propósito de un caso.                                                                                                             |       10 |
+| 432 | Aloinjerto masivo del mecanismo extensor en rodilla nativa: A propósito de un caso                                                                           |       10 |
+| 433 | Luxación compleja del codo: a propósito de un caso                                                                                                           |       10 |
+| 434 | Eficacia de la cobertura osea temprana en pacintes con traumatismo y exposición osea                                                                         |       10 |
+| 435 | Factores asociados al reingreso hospitalario a 30 días para pacientes manejados por pie diabético en dos centros de referencia en Bogotá, Colombia           |       10 |
+| 436 | Reconstrucción multiligamentaria de Rodilla MLKIIIL con autoinjertos ipsilaterales                                                                           |       10 |
+| 437 | Reconstrucción de Ruptura Crónica del Tendón Patelar con Autoinjerto del Peroneo Longo Ipsilateral                                                           |       10 |
+| 438 | RECONSTRUCCIÓN DE LIGAMENTO CRUZADO ANTERIOR CON AUTOINJERTO DE TENDON PURO DE CUÁDRICEPS CON SEGUIMIENTO A 3 AÑOS.                                          |       10 |
+| 439 | Enfoque actual del tratamiento de las lesiones multiligamentarias en la rodilla en el Hospital San Jose                                                      |       10 |
+| 440 | Desenlace exitoso de paciente politraumatizado in extremis con pelvis en libro abierto y luxación abierta de rodilla: reporte de caso                        |       10 |
+| 441 | ¿Cómo exponer completamente el platillo tibial lateral? - Revisión del abordaje posterolateral con osteotomía del peroné                                     |       10 |
+| 442 | MINI TORACOTOMÍA ASISTIDA POR ENDOSCOPIA PARA EL MANEJO DE ESPONDILODISCITIS TORÁCICA                                                                        |       10 |
+| 443 | TUMOR DE CÉLULAS GIGANTES DEL SACRO  TRATAMIENTO CON DENOSUMAB UNA ALTERNATIVA EN TUMORES IRRESECABLES                                                       |       10 |
+| 444 | IMPLANTACIÓN DE UN LINER DE DOBLE MOVILIDAD CEMENTADO COMO SOLUCIÓN DE RECAMBIO DE UNA PRÓTESIS TOTAL DE CADERA                                              |       10 |
+| 445 | Luxación tibioperonea proximal, reporte de caso                                                                                                              |       10 |
+| 446 | Predictores de lesiones meniscales y del ligamento cruzado anterior en pacientes con fractura de platillos tibiales: Estudio de cohortes retrospectivo       |       10 |
+| 447 | LUXOFRACTURA DE MONTEGGIA BADO IV INVETERADO EN PACIENTE ADULTO: REPORTE DE CASO                                                                             |       10 |
+| 448 | Medición de la distancia cortical dorsal (DDD) en fracturas de extremo distal del radio como factor determinante de colapso articular. Estudio de cort       |       10 |
+| 449 | Edema Perifisario Focal (FOPE):
+                                        Una manifestación potencialmente dolorosa de fusión fisaria fisiológica?
+                                                                                                                Reporte de caso                                    |       10 |
+| 450 | Edema Perifisario Focal (FOPE):
+                                        Una manifestación potencialmente dolorosa de fusión fisaria fisiológica?
+                                                                                                                Reporte de caso                                    |       10 |
+| 451 | Técnica de Unión-Cruzada (Cross-Link) para manejo de curvaturas congénitas de la tibia- Serie de casos                                                       |       10 |
+| 452 | ANÁLISIS DE LOS RESULTADOS DEL TRATAMIENTO QUIRÚRGICO DE LA RIZARTROSIS EN NUESTRO CENTRO                                                                    |       10 |
+| 453 | Mortalidad asociada a fracturas de cadera extra capsulares tratadas con osteosíntesis con clavo cefalomedular entre los años 2018 y 2022 en una instit       |       10 |
+| 454 | Luxación de Tendones Peroneos Asociado a Fractura de Maléolo Medial. Reporte de Caso y Revisión de la Literatura.                                            |       10 |
+| 455 | Estudio biomecánico del gesto técnico del lanzamiento del Tejo                                                                                               |       10 |
+| 456 | REPORTE DE RESULTADOS DE TRANSFERENCIA DE TRAPECIO INFERIOR PARA RECONSTRUCCION DE LESION IRREPARABLES DEL MANGUITO ROTADOR, ASISTIDO POR ARTROSCOPIA,       |       10 |
+| 457 | Trocleoplastia de profundización y reconstrucción del ligamento patelofemoral medial en paciente joven con inestabilidad recurrente                          |       10 |
+| 458 | Evaluación de parámetros en resonancia nuclear magnética para displasia residual de cadera en niños de 3 a 8 años.                                           |       10 |
+| 459 | LAS CIFRAS DE HEMOGLOBINA PREOPERATORIA Y SU REPERCUSIÓN EN LOS PACIENTES INTERVENIDOS DE FRACTURA EXTRACAPSULAR DE CADERA                                   |       10 |
+| 460 | Descripción del crecimiento del fémur proximal en pacientes pediátricos sin patología de cadera mediante tomografía                                          |       10 |
+| 461 | Resultados a un año del tratamiento quirúrgico de las fractura de radio distal en un hospital universitario en Colombia                                      |       10 |
+| 462 | Neruofibromatosis múltiple. Reporte de caso.                                                                                                                 |       10 |
+| 463 | Acetabuloplastia percutánea en enfermedad tumoral Una alternativa al reemplazo de cadera                                                                     |       10 |
+| 464 | Aloprótesis de fémur proximal en lactante con sarcoma de Ewing: Reporte de caso                                                                              |       10 |
+| 465 | Colocación de balón subacromial en ruptura masiva irreparable de manguito rotador                                                                            |       10 |
+| 467 | FRACTURA INTERTROCANTÉRICA DE CADERA EN PACIENTE CON HEMOFILIA A SEVERA: SECUENCIA DE MANEJO PERIOPERATORIO                                                  |       10 |
+| 468 | Luxación atlantoaxial con fractura de odontoides. Reporte de caso y revisión de la literatura.                                                               |       10 |
+| 469 | Colgajo fasciocutáneo tipo lengüeta medial como alternativa para el manejo de defectos de tejidos blandos en pierna                                          |       10 |
+| 470 | Luxofractura de Lisfranc y Chopart en un mismo paciente. Reporte de caso                                                                                     |       10 |
+| 471 | Fracturas Pertrocantericas y Acido Tranexàmico.                                                                                                              |       10 |
+| 472 | RESECCIÓN DE NEUROTECOMA EN ARTICULACIÓN SACROÍLIACA GUIADA POR NAVEGACIÓN: REPORTE DE CASO                                                                  |       10 |
+| 473 | Luxación anterolateral cerrada de astrágalo asociado a fractura de maléolo medial: reporte de un caso                                                        |       10 |
+| 474 | Caracterización de pacientes con pie equino varo congénito atendidos entre 2016 y 2021 en un hospital del departamento de Tolima – Colombia.                 |       10 |
+| 475 | Osteosintesis con placa de minifragmentos en clavicula distal: una opción terapeutica en niños                                                               |       10 |
+| 476 | FRACTURA LUXACION DE MONTEGGIA Y SU RELACION CON EL PACIENTE POLITRAUMATIZADO. REVISION DE 27 CASOS EN EL COMPLEJO HOSPITALARIO UNIVERSITARIO BADAJOZ        |       10 |
+| 477 | POLITRAUMATIZADO DE ALTA ENERGIA. FRACTURA LUXACION DE MONTEGGIA + FRACTURA SUPRAINTERCONDILEA ABIERTA IIIB DE FÉMUR, A PROPÓSITO DE UN CASO.                |       10 |
+| 478 | FRACTURA PERI-IMPLANTE EN EL CODO. A
+                                            PROPÓSITO DE UN CASO.                                                                                                   |       10 |
+| 479 | Evaluación comparativa de los cambios funcionales y dinamométricos en pacientes con dedo en resorte tratados mediante infiltración corticoidea vs OCE        |       10 |
+| 480 | MANEJO DE LESIÓN GRANDE DEL MANGUITO ROTADOR CON TECNICA TRANS OSEA EQUIVALENTE. Resultados en serie de casos.                                               |       10 |
+| 482 | RESULTADOS A LARGO PLAZO DESPUÉS DEL AUMENTO CON PARCHE SINTÉTICO PARA TRATAR LOS DESGARROS MASSIVOS DEL MANGUITO ROTADOR                                    |       10 |
+| 484 | Desenlace funcional comparativo entre manejo conservador versus quirúrgico de la estiloides cubital en pacientes con fractura de radio distal y estilo       |       10 |
+| 485 | ARTROPLASTIA DE RECONSTRUCCIÓN CON HEMI-HAMATE :  Otro enfoque en el manejo agudo de fracturas-luxaciones conminutas de la articulación IFP                  |       10 |
+| 486 | Adherencia a las indicaciones de tamizaje imagenológico en displasia de la cadera en desarrollo en un hospital de cuarto nivel de Medellín                   |       10 |
+| 487 | DE FOLICULITIS A OSTEOMIELITIS DE TIBIA:  INFECCIÓN DISEMINADA POR SARM PROVOCADA POR TATAMI EN MALAS CONDICIONES                                            |       10 |
+| 488 | Único abordaje parapatelar para manejo de fracturas combinadas de platillo tibial y tibia distal                                                             |       10 |
+| 489 | Colgajo sural reverso en paciente anciano presentación de un caso y revisión de literatura                                                                   |       10 |
+| 490 | CARACTERÍSTICAS EPIDEMIOLÓGICAS, CLÍNICAS Y RADIOLÓGICAS DE FRACTURAS DE CADERA EN NIÑOS DE 0 A 16 AÑOS ATENDIDOS EN EL HOSPITAL UNIVERSITARIO SAN VIC       |       10 |
+| 491 | Planeamiento tridimensional para corrección de mal unión y deformidad angular en paciente con fractura peri-implante de fémur. Reporte de caso.              |       10 |
+| 492 | Discrepancia en definiciones y tasas de progresión en lesión del manguito rotador: Una revisión sistemática                                                  |       10 |
+| 493 | Difícil pero no imposible: Reconstrucción de Luxofractura transolecraneana con fractura de cúpula radial. Reporte de caso                                    |       10 |
+| 494 | Distal Femoral Replacement for Non-Oncological Reconstruction in a Developing Country: Indications, Complications, Functional Results and Survival.          |       10 |
+| 495 | Osteomielitis en tibia proximal por M. conceptionense asociada gran pérdida ósea con reconstrucción ósea con colgajo de peroné y preservación articula       |       10 |
+| 496 | Colgajo propeller de tibial posterior: a propósito de un caso                                                                                                |       10 |
+| 497 | Menisco Discoideo Medial Inestable Bilateral                                                                                                                 |       10 |
+| 498 | CARACTERISTICAS Y RESULTADOS FUNCIONALES DE FRACTURAS  LISFRANC DE ALTA Y BAJA ENERGÍA EN EL HOSPITAL UNIVERSITARIO DEL VALLE                                |       10 |
+| 499 | Hematomas subdurales secundarios a hipotensión de líquido cefalorraquídeo por fístula iatrogénica C1-C2 asociada a discitis.                                 |       10 |
+| 500 | Ruptura del tendón de Aquiles en paciente con implante de pantorrilla.                                                                                       |       10 |
+| 501 | Diagnóstico y tratamiento tardío de subluxación C5-C6 traumática asociado a radiculopatía y dolor cervical intenso                                           |       10 |
+| 502 | ALTERNATIVA DE PRESERVACIÓN ACETABULAR EN ESQUELETO INMADURO POR OSTEOSARCOMA DE FÉMUR PROXIMAL                                                              |       10 |
+| 503 | Planeamiento dinámico de la Cirugía Correctiva de la Escoliosis Idiopática del Adolescente: Ventajas del O-Arm Intraoperatorio                               |       10 |
+| 505 | Condromatosis sinovial extraarticular de la rodilla Reporte de caso y revisión de la literatura                                                              |       10 |
+| 507 | Un dolor lumbar atípico: el linfoma óseo primario                                                                                                            |       10 |
+| 508 | Comparativa de manejo quirúrgico  en las Fracturas supracondíleas en los niños                                                                               |       10 |
+| 509 | Hallux rigidus: comparativa de tratamiento en nuestro hospital                                                                                               |       10 |
+| 510 | Triple Atrodesis más Osteotomía Koutsogiannis en Paciente con Artritis Reumatoide                                                                            |       10 |
+| 511 | Hablemos de compresión del nervio cubital asociado a lipoma gigante de antebrazo: reporte de un caso                                                         |       10 |
+| 512 | Hablemos de compresión del nervio cubital asociado a lipoma gigante de antebrazo: reporte de un caso                                                         |       10 |
+| 513 | HIPOVITAMINOSIS D EN PACIENTES CON FRACTURA DE CADERA POR FRAGILIDAD EN UNA INSTITUCIÓN DE CUARTO NIVEL EN MEDELLÍN - COLOMBIA                               |       10 |
+| 514 | Inmovilización con férula comparado con yeso cerrado en el manejo ortopédico de las fracturas de radio distal en pacientes pediátricos.                      |       10 |
+| 515 | prueba marlong trabajo libre 1                                                                                                                               |       10 |
+| 516 | CARACTERIZACIÓN DE LA PSEUDOARTROSIS DE HUESOS LARGOS Y SU MANEJO EN PACIENTES                                                                               |       10 |
+| 518 | Tratamiento de no unión de húmero distal abordaje paratricipital más osteosíntesis con placas anatómicas e injertos óseos de cresta ilíaca                   |       10 |
+| 519 | Descripción del protocolo de manejo y resultados clínicos en pacientes con sospecha de osteonecrosis espontánea de rodilla                                   |       10 |
+| 520 | Experiencia en aumentación de la osteosintesis en fracturas complejas de fémur distal                                                                        |       10 |
+| 521 | FRACTURAS DIAFISARIAS DE ANTEBRAZO EN NIÑOS: TRATAMIENTO CON FIJACIÓN INTRAMEDULAR CON CLAVOS. COHORTE HISTÓRICA BICÉNTRICA                                  |       10 |
+| 522 | Combinación de técnicas para manejo de defecto óseo segmentario mayor en tibia                                                                               |       10 |
+| 524 | Diseño y desarrollo de andamios 3D para reparación de defectos óseos                                                                                         |       10 |
+| 525 | Uso de Bioglass en el manejo de Panosteomielitis de tibia, reporte de un caso interesante.                                                                   |       10 |
+| 526 | RECONSTRUCCION LIGAMENTOSA EN LUXACION TRAUMÁTICA DE RODILLA EN DEPORTISTA. A PROPÓSITO DE UN CASO                                                           |       10 |
+| 527 | CORRECCIÓN DE HALLUX VALGUS EN NIÑOS Y ADOLESCENTES CON LA TÉCNICA S.E.R.I                                                                                   |       10 |
+| 528 | Transferencia del trapezius inferior
+
+                                            -Anatomía-Biomecánica-Cirugía                                                                                          |       10 |
+| 529 | FRECUENCIA DE USO DE MEDICAMENTOS ASOCIADOS A CAIDAS EN PACIENTES ADULTOS MAYORES CON FRACTURAS POR FRAGILIDAD ATENDIDOS EN UN HOSPITAL UNIVERSITARIO        |       10 |
+| 530 | Seguridad y Eficacia del Ácido Tranexámico Intravenosso Versus Combinado Intravenoso y Tópico en Reemplazos Totales Primarios de Rodilla                     |       10 |
+| 531 | Participación deportiva en pacientes con Mielomeningocele: Beneficios y Barreras                                                                             |       10 |
+| 532 | PARÁMETROS CINEMÁTICOS DEL RUNNING EN FUTBOLISTAS MUJERES DE ALTO RENDIMIENTO                                                                                |       10 |
+| 533 | Tratamiento de la contractura en flexión de rodilla en Mielomeningocele: Capsulectomía posterior y alargamiento de isquiotibiales                            |       10 |
+| 534 | ASPECTOS BIOPSICOSOCIALES QUE GENERAN SOBRECARGA EN PACIENTES CON PARÁLISIS CEREBRAL Y SUS CUIDADORES, ATENDIDOS EN EL LABORATORIO DE ANÁLISIS DE MOVI       |       10 |
+| 535 | Confiabilidad intra- e inter-observador de la Clasificación de Dejour para displasia troclear                                                                |       10 |
+| 536 | Osteocondritis disecante: reporte de caso                                                                                                                    |       10 |
+| 537 | Reemplazo bilateral de rodilla, una opción de movilidad y vida para el paciente con artropatía hemofílica                                                    |       10 |
+| 538 | Alargamiento agudo de braquimetatarsia con aloinjerto de cresta ilíaca, reporte de caso                                                                      |       10 |
+| 539 | LOWER TRAPEZIUS TENDON TRANSFER WITH ACHILLES TENDON ALLOGRAFT FOR IRREPARABLE POSTEROSUPERIOR ROTATOR CUFF TEARS, EXPERIENCE IN A DEVELOPING COUNTRY        |       10 |
+| 540 | Pseudotumor hemofílico, presentación de un caso y revisión de la literatura.                                                                                 |       10 |
+| 541 | Luxación posterior de hombro asociado a fractura de cuello anatómico del húmero proximal.                                                                    |       10 |
+| 542 | Variantes anatómicas del Ligamento Coraco Acromial
+
+                                                          Revisión Sistemática - Estudios en cadáver
+                                                                                                                                                                  |       10 |
+| 543 | Técnica de Cirugía Latarjet: Tendencias en América Latina                                                                                                    |       10 |
+| 544 | RESULTADO CLÍNICO Y FUNCIONAL DE LA RECONSTRUCCIÓN DE LAS LESIONES DE LA ESQUINA POSTEROLATERAL DE RODILLA KDI AL Y KDI PL, CLÍNICA IMBANACO                 |       10 |
+| 545 | Resultados clínicos satisfactorios con condrogénesis autóloga inducida por matriz en el tratamiento de lesiones condrales de rodilla de grado IV             |       10 |
+| 546 | Resultados clínicos satisfactorios con condrogénesis autóloga inducida por matriz en el tratamiento de lesiones condrales de rodilla de grado IV             |       10 |
+| 547 | Reporte de caso: Tratamiento de luxación de rodilla KDV osteosinteis y reconstrucción multiligamentaria en un tiempo quirúrgico                              |       10 |
+| 548 | Manejo de inestabilidad posterior con defecto Hill - Sachs reverso agudo combinando reparación de labrum artroscópica y desimpactación más osteosíntes       |       10 |
+| 549 | Triple transferencia escapular para parálisis del músculo trapecio secundario a lesión iatrogénica de nervio espinal accesorio                               |       10 |
+| 550 | Fracturas de cadera en adultos mayores de 65 años, utilidad real de una ruta clínica especifica de atención hospitalaria:  Una apreciación critica.          |       10 |
+| 551 | PERFIL MICROBIOLÓGICO DE LAS INFECCIONES ASOCIADAS A LA FIJACIÓN DE LAS FRACTURAS Y SUS IMPLICACIONES EN EL ESQUEMA DE TRATAMIENTO ANTIBIÓTICO               |       10 |
+| 552 | Reducción abierta progresiva en luxación anterior inveterada de hombro: Reporte de un caso y revisión literatura                                             |       10 |
+| 553 | Osteotomía parafocal para el tratamiento de pseudoartrosis de los huesos largos de las extremidades inferiores.                                              |       10 |
+| 554 | Luxación inveterada de codo: a propósito de un caso                                                                                                          |       10 |
+| 555 | Lesiones vasculares asociadas al Reemplazo Total de Rodilla. Lesión de Arteria Poplítea: Reporte de Caso                                                     |       10 |
+| 556 | Reporte de caso clínico: Luxación talo-calcáneo-navicular medial sin fractura asociada.                                                                      |       10 |
+| 557 | UTILIZACIÓN DE LA DENSITOMETRÍA ÓSEA PARA LA DETECCIÓN TEMPRANA DE OSTEOPENIA Y LA OSTEOPOROSIS EN PACIENTES CON FRACTURAS DE RADIO, CADERA O COLUMNA        |       10 |
+| 558 | Luxación esterno clavicular posterior. Reporte de caso                                                                                                       |       10 |
+| 559 | Síndrome de lisis tumoral espontáneo en sarcomas sólidos. Reporte de caso                                                                                    |       10 |
+| 560 | Ruptura y luxación tardía del Inserto en Artroplastia Unicompartimental Medial de Rodilla: Reporte de Caso y revisión de la literatura                       |       10 |
+| 561 | SINOVITIS VILLONODULAR PIGMENTADA RODILLA IZQUIERDA: A PROPÓSITO DE UN CASO                                                                                  |       10 |
+| 562 | EVALUACIÓN OBJETIVA DE HABILIDADES ARTROSCOPICAS BASADAS EN ASSET USANDO REALIDAD MIXTA                                                                      |       10 |
+| 563 | PRP COMPARADO CON MANEJO CONVENCIONAL PARA EL MANEJO DE ARTROSIS DE RODILLA LEVE O MODERADA: UNA REVISIÓN SISTEMÁTICA Y METAANÁLISIS                         |       10 |
+| 564 | Defecto de Cobertura en Retropié Tratado con Colgajo Sural Reverso                                                                                           |       10 |
+| 565 | Condrosarcoma mesenquimal extraesquelético reporte de caso y revisión de la literatura.                                                                      |       10 |
+| 566 | Neurotización primaria en amputaciones mayores para la prevención de dolor del miembro fantasma y formación de neuroma doloroso, revisión sistemática        |       10 |
+| 567 | A Randomized Controlled Trial of Preoperative Ultrasound-Guided Pulsed Radiofrequency of the Saphenous Nerve for the Management of Acute and Chronic P       |       10 |
+| 568 | Características clínicas y epidemiológicas de pacientes con Parálisis Cerebral atendidos por el servicio de Ortopedia Pediátrica de un hospital pediát       |       10 |
+| 569 | DESLIZAMIENTO EPIFISARIO CAPITAL FEMORAL CRÓNICO E INESTABLE EN PACIENTE DE 17 AÑOS : REPORTE DE CASO.                                                       |       10 |
+| 570 | DESLIZAMIENTO EPIFISARIO CAPITAL FEMORAL CRÓNICO E INESTABLE EN PACIENTE DE 17 AÑOS : REPORTE DE CASO.                                                       |       10 |
+| 571 | Tratamiento no quirúrgico en doble lesión de complejo suspensorio del hombro: Reporte de un caso y revisión literatura.                                      |       10 |
+| 572 | El trauma de guerra y su compromiso en extremidades: análisis posterior a la firma del tratado de paz.                                                       |       10 |
+| 573 | EXTRACCIÓN DE UN CLAVO ROTO ENDOMEDULAR DE FÉMUR, LA DIFICULTAD PROMUEVE LA CREATIVIDAD                                                                      |       10 |
+| 574 | Revisión de lesión de ligamento cruzado anterior con aloinjerto más osteotomía tibial proximal concomitante                                                  |       10 |
+| 575 | Revisión de lesión de ligamento cruzado anterior con aloinjerto más osteotomía tibial proximal concomitante                                                  |       10 |
+| 576 | Prótesis De Revisión En Paciente Joven Con Previa Prótesis De Tobillo Fallida En Latinoamerica
+                                                                                                                                                                    |       10 |
+| 577 | Análisis económico de l técnica UBE y comparación de la artrodesis lumbar por medio de un estudio de minimización de costos                                  |       10 |
+| 578 | Osteopetrosis, a propósito de un caso                                                                                                                        |       10 |
+| 579 | Evaluación de Lesiones del Tendón Subescapular en Resonancia Magnética: Comparación entre Abordaje Sistemático y Convencional en Evaluadores con Difer       |       10 |
+| 580 | LUXOFRACTURA DE TALO HAWKINS III: A PROPOSITO UN CASO                                                                                                        |       10 |
+| 581 | Tratamiento de fracturas del fémur proximal por heridas de arma de fuego de alta velocidad en el Hospital Militar Central de Bogotá                          |       10 |
+| 582 | Osteocondritis Disecante en Adulto con aplicación de prótesis total de rodilla:  Presentación de caso                                                        |       10 |
+| 583 | Tratamiento de fracturas del fémur proximal por heridas de arma de fuego de alta velocidad en el Hospital Militar Central de Bogotá                          |       10 |
+| 584 | TÉCNICA MIO PARA FRACTURA SUBTROCANTÉRICA PEDIATRICA UTILIZANDO PLACA ANATOMICA DE HÚMERO PROXIMAL - REPORTE DE CASO                                         |       10 |
+| 585 | Aseptic Failure Rates in Revision Total Knee Arthroplasty Using Structural Allografts vs. Porous Metal Cones for AORI Grade 2 and 3 Defects: A Systema       |       10 |
+| 591 | Luxación Aislada de la Cúpula Radial                                                                                                                         |       10 |
+| 592 | Transferencia tendinosa lesión alta del radial: A propósito un caso                                                                                          |       10 |
+| 593 | FACTORES ASOCIADOS AL DESENLACE DE LESIONES EN ZONAS FLEXORAS DE LA MANO POR PULIDORA COHORTE RETROSPECTIVA                                                  |       10 |
+| 595 | osteonecrosis secundaria de la rodilla posterior a tratamiento con quimioterapia                                                                             |       10 |
+| 597 | Técnica de “doble cincha –doble cerclaje” para tenodesis proximal intrarticular del bíceps por artroscopia                                                   |       10 |
+| 599 | AMPUTACION BILATERAL DE PULGAR TRATAMIENTO CON OSTEOGENESIS DISTRACCIONAL BILATERAL COMO ALTERNATIVA NO MICROQUIRURGICA. REPORTE DE CASO                     |       10 |
+| 600 | Lesión condral en cóndilo femoral con fragmento libre intraarticular. Fijación con suturas                                                                   |       10 |
+| 601 | MANEJO DE DEFORMIDADES ANGULARES EN TIBIA A PARTIR DE UN FIJADOR EXTERNO CIRCULAR HEXÁPODO: A PROPÓSITO DE UN CASO                                           |       10 |
+| 602 | Cirugía de columna mínimamente invasiva en espondilodiscitis: ¿Mejor opción terapéutica que la cirugía abierta?                                              |       10 |
+| 603 | Pseudotumor en rodilla como presentación infrecuente de tuberculosis diseminada en paciente inmunocompetente                                                 |       10 |
+| 604 | Desenlaces clínicos del tratamiento de fracturas intertrocantéricas por fragilidad con aumentación. Seguimiento de una cohorte retrospectiva                 |       10 |
+| 605 | Dolor de cadera en niños con enfermedad de Van Neck-Odelberg: Explorando el papel crucial de la carga deportiva y los Esteroides anabólicos.                 |       10 |
+| 606 | CARACTERIZACIÓN DE PACIENTES CON ESCOLIOSIS IDIOPÁTICA ATENDIDA POR UN GRUPO DE MÉDICOS DEL PROGRAMA DE ORTOPEDIA DE LA UNIVERSIDAD DE ANTIOQUIA EN LA       |       10 |
+| 607 | COMPORTAMIENTO DE VARIABLES DETERMINANTES DE COMPLICACIONES EN PACIENTES PEDIÁTRICOS CON INFECCIONES MUSCULOESQUELÉTICAS                                     |       10 |
+| 608 | Funcionalidad en pacientes mayores de 60 años con fractura de radio distal tratados con y sin cirugía:  Scoping Review                                       |       10 |
+| 609 | Tratamiento de Lesiones Condrales de la Patela en un Modelo Animal de Ovejas Pelibuey                                                                        |       10 |
+| 610 | Fierro Test                                                                                                                                                  |       10 |
+| 611 | Predictores de riesgo para infecciones musculoesqueléticas concomitantes y multifocales en niños                                                             |       10 |
+| 612 | FRACTURA DE CUELLO DE QUINTO METACARPIANO TRATAMIENTO CON UNO VERSUS DOS CLAVOS ENDOMEDULARES ANTEROGRADOS. COHORTE RETROSPECTIVA                            |       10 |
+| 613 | Uso de la membrana inducida como modificación a la técnica de Paley en manejo de pseudoartrosis congénita de tibia                                           |       10 |
+| 614 | Comparación de resultados clínicos y radiológicos del abordaje lateral indirecto modificado (ALIM) y el posterolateral en artroplastia total de cadera       |       10 |
+| 615 | Reemplazo Total de Cadera en Adolescentes: Revisión Sistemática y Metaanálisis                                                                               |       10 |
+| 616 | ANÁLISIS DE MARCHA EN PACIENTES POSTOPERADOS DE ARTROPLASTIA TOTAL DE RODILLA ASISTIDA POR ROBOT VS TÉCNICA DE ALINEACIÓN MANUAL A 3 y 6 MESES               |       10 |
+| 617 | FRACTURA SUPRACONDÍLEA GARTLAND III-B, CON LESIÓN VASCULAR CRÓNICA INVETERADA MANEJO MULTIDISCIPLINARIO: REPORTE DE UN CASO.                                 |       10 |
+| 619 | Metástasis infrecuentes de condrosarcoma                                                                                                                     |       10 |
+| 620 | Incidencia de luxación postoperatoria en artroplastia total de cadera con asistencia robótica                                                                |       10 |
+| 621 | Conversión de artrodesis de cadera a un reemplazo total de cadera asistida por brazo robótico MAKO reporte de caso                                           |       10 |
+| 623 | Pseudoartrosis congénita de clavícula y su manejo individual. Reporte de caso                                                                                |       10 |
+| 624 | Técnica para una fijación endomedular exitosa en una fractura de fémur atípica: Reporte de un caso                                                           |       10 |
+| 625 | Opciones de tratamiento en luxofractura carpometacarpiana: Serie de casos y recomendaciones                                                                  |       10 |
+| 627 | RESULTADO FUNCIONAL EN LOS PACIENTES INTERVENIDOS DE RECONSTRUCCIÓN DEL LIGAMENTO CRUZADO ANTERIOR CON USO DE AUTOINJERTO DE HUESO TENDÓN HUESO VS. IS       |       10 |
+| 628 | REEMPLAZO DE FÉMUR TOTAL EN PACIENTE CON OSTEOMIELITIS CRÓNICA EN CLÍNICA SAN JOSÉ, CÚCUTA. REPORTE DE CASO                                                  |       10 |
+| 629 | Reemplazo Total de Rodilla con un Sistema de Navegación Basado en Acelerómetro mejora la alineación de la rodilla: una alternativa práctica.                 |       10 |
+| 630 | NDOPRÓTESIS TOTAL DE HÚMERO Y ARTROPLASTIA DE CODO: REPORTE DE CASO                                                                                          |       10 |
+| 631 | Tratamiento de defectos osteocondrales de rodilla en conejos con medios condicionados de células madre mesenquimales                                         |       10 |
+| 632 | Evaluación de la marcha pre y posquirúrgica en un reemplazo total de tobillo                                                                                 |       10 |
+| 633 | Lipomatosis sinovial difusa e hipoplasia de los meniscos en un paciente adolescente                                                                          |       10 |
+| 634 | Satisfacción de pacientes con reemplazo total de rodilla bilateral: comparación entre técnica manual y asistida por brazo robótico                           |       10 |
+| 635 | Aumentación glenoidea para inestabilidad posterior de hombro - Bloque óseo con injerto de cresta iliaca                                                      |       10 |
+| 636 | ABORDAJE MÍNIMAMENTE INVASIVO DE FRACTURA INESTABLE DE PELVIS TILE B1, YOUNG-BURGUESS TIPO 3 EN PACIENTE ANCIANA.                                            |       10 |
+| 637 | Reconstrucción de  fémur con fractura diafisiaria  izquierda  secundario a  múltiples  complicaciones  de  la osteosíntesis   con   clavo endomedular.       |       10 |
+| 638 | Historia de Cirugía de Hombro en Colombia                                                                                                                    |       10 |
+| 669 | Tratamiento quirúrgico de la deformidad espinal en el síndrome de Prune Belly: reporte de un caso.                                                           |       10 |
++-----+--------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+
+tengo
+ trabajosC_trabajos_has_evaluadores 
+
+ mysql> desc trabajosC_trabajos_has_evaluadores;
++------------------+----------+------+-----+---------+----------------+
+| Field            | Type     | Null | Key | Default | Extra          |
++------------------+----------+------+-----+---------+----------------+
+| id               | bigint   | NO   | PRI | NULL    | auto_increment |
+| calificacion     | double   | YES  |     | NULL    |                |
+| fecha_evaluacion | date     | YES  |     | NULL    |                |
+| evaluador_id     | bigint   | YES  | MUL | NULL    |                |
+| trabajo_id       | bigint   | YES  | MUL | NULL    |                |
+| comentario       | longtext | YES  |     | NULL    |                |
++------------------+----------+------+-----+---------+----------------+
+
+
+ trabajosC_trabajos 
+ mysql> desc trabajosC_trabajos;
++--------------------------+--------------+------+-----+---------+----------------+
+| Field                    | Type         | Null | Key | Default | Extra          |
++--------------------------+--------------+------+-----+---------+----------------+
+| id                       | bigint       | NO   | PRI | NULL    | auto_increment |
+| tipo_trabajo             | varchar(45)  | NO   |     | NULL    |                |
+| subtipo_trabajo          | varchar(45)  | YES  |     | NULL    |                |
+| titulo                   | varchar(150) | NO   |     | NULL    |                |
+| observaciones            | longtext     | YES  |     | NULL    |                |
+| resumen_esp              | longtext     | NO   |     | NULL    |                |
+| resumen_ingles           | longtext     | NO   |     | NULL    |                |
+| fecha_subida             | datetime(6)  | NO   |     | NULL    |                |
+| fecha_modificacion       | date         | YES  |     | NULL    |                |
+| Autor_correspondencia_id | bigint       | NO   | MUL | NULL    |                |
+| curso_id                 | bigint       | NO   | MUL | NULL    |                |
+| institucion_principal_id | bigint       | NO   | MUL | NULL    |                |
+| modificado_por_id        | int          | YES  | MUL | NULL    |                |
+| calificacion             | double       | YES  |     | NULL    |                |
+| identificador            | varchar(45)  | YES  |     | NULL    |                |
+| siglasTrabajo            | varchar(5)   | YES  |     | NULL    |                |
++--------------------------+--------------+------+-----+---------+----------------+
+
+
+ SELECT e.*
+FROM trabajosC_trabajos_has_evaluadores te
+JOIN trabajosC_trabajos t ON te.trabajo_id = t.id
+JOIN evaluadores e ON te.evaluador_id = e.id
+WHERE t.curso_id = 10;
+
+select te.trabajo_id,t.titulo,t.curso_id from trabajosC_trabajos_has_evaluadores te JOIN
+trabajosC_trabajos t On te.trabajo_id = t.id where t.curso_id = 10; 
