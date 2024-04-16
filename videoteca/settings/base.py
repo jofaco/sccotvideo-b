@@ -145,6 +145,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://165.227.177.75:8080",
     "http://165.227.177.75",
     "http://videos.sccot.org",
+    "https://videospruebas1.vcccolombia.com/",
 ]
 
 CORS_ORIGIN_WHITELIST = [
@@ -156,6 +157,8 @@ CORS_ORIGIN_WHITELIST = [
     "http://165.227.177.75:8080",
     "http://165.227.177.75",
     "http://videos.sccot.org",
+    "http://videos.sccot.org",
+    "https://videospruebas1.vcccolombia.com/"
 ]
 
 SIMPLE_JWT = {
