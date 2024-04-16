@@ -137,30 +137,11 @@ USE_TZ = True
 AUTH_USER_MODEL = 'users.User'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8080",
-    "http://127.0.0.1:8000",
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "http://165.227.177.75:8000",
-    "http://165.227.177.75:8080",
-    "http://165.227.177.75",
-    "http://videos.sccot.org",
-    "https://videospruebas1.vcccolombia.com",
-    "http://localhost"
+    "*"
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    "http://localhost:8080",
-    "http://127.0.0.1:8000",
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "http://165.227.177.75:8000",
-    "http://165.227.177.75:8080",
-    "http://165.227.177.75",
-    "http://videos.sccot.org",
-    "http://videos.sccot.org",
-    "https://videospruebas1.vcccolombia.com",
-    "http://localhost"
+    "*"
 
 ]
 
