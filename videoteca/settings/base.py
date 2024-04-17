@@ -15,11 +15,7 @@ SECRET_KEY = 'django-insecure-m=)yro0jwu$8d28+=2=yfo*)-_4$7=_ng^ywrr5s)m0*3=%(ze
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost",
-    "http://localhost:3000",
-    
-]
+
 
 CORS_ALLOW_METHODS = (
     "DELETE",
