@@ -52,6 +52,7 @@ LOCAL_APPS = [
     'apps.series',
 ]
 THIRD_APPS = [
+    'corsheaders',
     'rest_framework',
     'rest_framework.authtoken',
     'rest_framework_simplejwt',
@@ -59,7 +60,6 @@ THIRD_APPS = [
     'import_export',
     'simple_history',
     'drf_yasg',
-    'corsheaders',
     'allauth',
     'allauth.account',
 ]
@@ -85,10 +85,10 @@ REST_FRAMEWORK = {
 #IsAuthenticatedOrReadOnly
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware', 
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
