@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-m=)yro0jwu$8d28+=2=yfo*)-_4$7=_ng^ywrr5s)m0*3=%(ze
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['http://127.0.0.1:5500']
 
 CORS_ALLOW_HEADERS = [
     'access-control-allow-origin',  # Asegúrate de incluir 'access-control-allow-origin' aquí
@@ -23,7 +23,6 @@ CORS_ALLOW_HEADERS = [
 
 BASE_APPS = [
     'corsheaders',
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -139,26 +138,9 @@ USE_TZ = True
 
 AUTH_USER_MODEL = 'users.User'
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8080",
-    "http://127.0.0.1:8000",
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "http://165.227.177.75:8000",
-    "http://165.227.177.75:8080",
-    "http://165.227.177.75",
-    "http://videos.sccot.org",
-]
-
 CORS_ORIGIN_WHITELIST = [
-    "http://localhost:8080",
-    "http://127.0.0.1:8000",
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "http://165.227.177.75:8000",
-    "http://165.227.177.75:8080",
-    "http://165.227.177.75",
-    "http://videos.sccot.org",
+    'http://127.0.0.1:5500',
+    # Otros orígenes permitidos si es necesario
 ]
 
 SIMPLE_JWT = {
