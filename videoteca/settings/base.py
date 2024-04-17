@@ -37,6 +37,7 @@ CORS_ALLOW_HEADERS = (
 # Application definition
 
 BASE_APPS = [
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -52,7 +53,6 @@ LOCAL_APPS = [
     'apps.series',
 ]
 THIRD_APPS = [
-    'corsheaders',
     'rest_framework',
     'rest_framework.authtoken',
     'rest_framework_simplejwt',
