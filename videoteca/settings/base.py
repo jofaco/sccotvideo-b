@@ -135,6 +135,8 @@ CORS_ALLOW_HEADERS = [
     'Content-Type',
     'Accept',
     'Authorization',
+    'access-control-allow-origin',  # Asegúrate de incluir 'access-control-allow-origin' aquí
+
 ]
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
