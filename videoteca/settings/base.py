@@ -123,7 +123,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_METHODS = [
     'GET',
     'POST',
@@ -137,6 +136,9 @@ CORS_ALLOW_HEADERS = [
     'Authorization',
     'access-control-allow-origin',  # Asegúrate de incluir 'access-control-allow-origin' aquí
 
+]
+CORS_ALLOWED_ORIGINS = [
+    "*",
 ]
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
