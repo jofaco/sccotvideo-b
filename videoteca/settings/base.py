@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-m=)yro0jwu$8d28+=2=yfo*)-_4$7=_ng^ywrr5s)m0*3=%(ze
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://127.0.0.1:5500']
+ALLOWED_HOSTS = ['http://127.0.0.1:5500','https://videospruebas1.vcccolombia.com']
 
 CORS_ALLOW_HEADERS = [
     'access-control-allow-origin',  # Asegúrate de incluir 'access-control-allow-origin' aquí
@@ -140,6 +140,7 @@ AUTH_USER_MODEL = 'users.User'
 
 CORS_ORIGIN_WHITELIST = [
     'http://127.0.0.1:5500',
+    'https://videospruebas1.vcccolombia.com'
     # Otros orígenes permitidos si es necesario
 ]
 
