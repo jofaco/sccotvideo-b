@@ -14,6 +14,7 @@ SECRET_KEY = 'django-insecure-m=)yro0jwu$8d28+=2=yfo*)-_4$7=_ng^ywrr5s)m0*3=%(ze
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+ALLOWED_HOSTS = ['http://127.0.0.1:5500','https://videospruebas1.vcccolombia.com','http://localhost:3000']
 
 CORS_ALLOW_HEADERS = [
     'access-control-allow-origin',  # Asegúrate de incluir 'access-control-allow-origin' aquí
@@ -87,9 +88,7 @@ ROOT_URLCONF = 'videoteca.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            os.path.join(BASE_DIR,'build')
-        ],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -138,6 +137,10 @@ CORS_ALLOW_HEADERS = [
     'access-control-allow-origin',  # Asegúrate de incluir 'access-control-allow-origin' aquí
 
 ]
+CORS_ALLOWED_ORIGINS = [
+    "*",
+    "http://localhost:3000",
+]
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
@@ -151,11 +154,11 @@ USE_TZ = True
 
 AUTH_USER_MODEL = 'users.User'
 
-CORS_ORIGIN_WHITELIST = [
-    'http://127.0.0.1:5500',
-    'https://videospruebas1.vcccolombia.com'
+#CORS_ORIGIN_WHITELIST = [
+#    'http://127.0.0.1:5500',
+#    'https://videospruebas1.vcccolombia.com'
     # Otros orígenes permitidos si es necesario
-]
+#]
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=30),
@@ -176,9 +179,6 @@ SIMPLE_JWT = {
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'build/static')
-]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
