@@ -2,13 +2,17 @@
 from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.decorators import action
-from rest_framework.response import Response
 
 from apps.videos.models import Idioma, tipoVideo, Categoria
 from apps.videos.api.serializers.general_serializers import *
 from apps.videos.api.serializers.historial_serializers import *
-
+from rest_framework.views import APIView
+from rest_framework.response import Response
 import json
+
+class HolaMundoAPIView(APIView):
+    def get(self, request):
+        return Response({"message": "¡Hola Mundo!"})
 class categoriaViewset(viewsets.ModelViewSet):
     """Clase para el control del modelo Categoria
 

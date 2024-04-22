@@ -18,7 +18,8 @@ from apps.videos.api.serializers.video_serializers import (
 )
 from apps.videos.funciones.vimeoAPI import cons_vim_api
 from apps.videos.models import Video
-
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
 class VideoViewSet(viewsets.ModelViewSet):
     
