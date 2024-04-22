@@ -7,14 +7,16 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.views import TokenObtainPairView
 from rest_framework.permissions import IsAuthenticated
 from django.http import HttpResponse
-
+from rest_framework.views import APIView
 from apps.users.api.serializers.User_serializers import CustomTokenOptainPairSerializer, CustomUserSerializer
 from apps.users.models import User
 
 # Importacion modulo para usar Odoo
 import xmlrpc.client
 
-
+class HolaMundoAPIView(APIView):
+    def get(self, request):
+        return Response({"message": "¡Hola Mundo!"})
 class login(TokenObtainPairView):
     serializer_class = CustomTokenOptainPairSerializer
 
