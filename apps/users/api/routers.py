@@ -2,12 +2,10 @@ from rest_framework.routers import DefaultRouter
 
 from apps.users.api.viewsets.user_viewset import UserViewSet
 from apps.users.api.viewsets.general_views import gustosUserViewset, commentaryViewset
-from apps.users.views import HolaMundoAPIView
+
 router = DefaultRouter()
 router.register(r'users', UserViewSet, basename="users")
 router.register(r'gustos_by_users', gustosUserViewset, basename="gustos_by_users")
 router.register(r'commentaries', commentaryViewset, basename="commentaries")
 
-urlpatterns = [
-    path('saludo/', HolaMundoAPIView.as_view(), name='saludo'),  # Agregar la URL para la vista de saludo
-] + router.urls
+urlpatterns = router.urls
