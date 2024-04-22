@@ -31,6 +31,15 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     re_path(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
+    re_path(r'^loginuser/', TemplateView.as_view(template_name='index.html')),
+    re_path(r'^logout/', TemplateView.as_view(template_name='index.html')),
+    re_path(r'^seeVideo/', TemplateView.as_view(template_name='index.html')),
+    re_path(r'^seeSerie/', TemplateView.as_view(template_name='index.html')),
+    re_path(r'^Series/', TemplateView.as_view(template_name='index.html')),
+    re_path(r'^Videos/', TemplateView.as_view(template_name='index.html')),
+    re_path(r'^Casos/', TemplateView.as_view(template_name='index.html')),
+    re_path(r'^Perfil/', TemplateView.as_view(template_name='index.html')),
+    re_path(r'^Ajustes/', TemplateView.as_view(template_name='index.html')),
     path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     path('admin/', admin.site.urls),
