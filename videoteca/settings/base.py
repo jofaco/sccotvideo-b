@@ -14,11 +14,9 @@ SECRET_KEY = 'django-insecure-m=)yro0jwu$8d28+=2=yfo*)-_4$7=_ng^ywrr5s)m0*3=%(ze
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://127.0.0.1:5500','https://videospruebas1.vcccolombia.com','http://localhost:3000','https://videospruebasbackend.vcccolombia.com']
+ALLOWED_HOSTS = ['*']
 
-CORS_ALLOW_HEADERS = [
-    'access-control-allow-origin',  # Asegúrate de incluir 'access-control-allow-origin' aquí
-]
+
 # Application definition
 
 BASE_APPS = [
