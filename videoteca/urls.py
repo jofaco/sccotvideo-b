@@ -29,15 +29,20 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
-     path('',TemplateView.as_view(template_name='../build/index.html', name='index')),
-    #re_path(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
+    re_path(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
     path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     path('admin/', admin.site.urls),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('', include('apps.users.api.urls')),
     path('accounts/', include('allauth.urls')),
-    
+    path('', include('apps.videos.api.urls')),
+    path('',include('apps.videos.api.routers')),
+    path('',include('apps.users.api.routers')),
+    path('',include('apps.location.api.routers')),
+    path('',include('apps.notifications.api.routers')),
+    path('',include('apps.series.api.routers')),
     
 
 ]
