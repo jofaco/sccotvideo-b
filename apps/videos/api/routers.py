@@ -8,7 +8,6 @@ router = DefaultRouter()
 router.register(r'videos',VideoViewSet, basename = 'videos')
 router.register(r'videostemporada/<int:id/>',VideoViewSet, basename = 'videos')
 
-router.register(r'categorias',categoriaViewset, basename = 'categorias')
 router.register(r'categorias2',categoriaViewset, basename = 'categorias')
 router.register(r'especialidades',especialidadViewset, basename = 'especialidades')
 router.register(r'subespecialidades',subEspecialidadViewset, basename = 'subespecialidades')
