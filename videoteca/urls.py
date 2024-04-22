@@ -35,14 +35,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    """ path('', include('apps.users.api.urls')), """
     path('accounts/', include('allauth.urls')),
-   """  path('', include('apps.videos.api.urls')),
-    path('',include('apps.videos.api.routers')),
-    path('',include('apps.users.api.routers')),
-    path('',include('apps.location.api.routers')),
-    path('',include('apps.notifications.api.routers')),
-    path('',include('apps.series.api.routers')), """
+    
      path('',TemplateView.as_view(template_name='../build/index.html', name='index')),
     
 
