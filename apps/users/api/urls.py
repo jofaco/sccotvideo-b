@@ -4,8 +4,8 @@ from apps.users.views import  logout, login
 
 urlpatterns = [
     #path('users/', user_api_view, name='user_api'),
-    path('login/', login.as_view(), name='login'),
-    path('logout/', logout.as_view(), name='logout'),
+    path('api/login/', login.as_view(), name='login'),
+    path('api/logout/', logout.as_view(), name='logout'),
     #path('refresh-token/', userToken.as_view(), name='refresh_token'),
     #path('users/<int:pk>/', user_detail_api_view, name='user_detail_api_view')
 ]
