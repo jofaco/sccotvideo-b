@@ -43,7 +43,7 @@ urlpatterns = [
     path('',include('apps.location.api.routers')),
     path('',include('apps.notifications.api.routers')),
     path('',include('apps.series.api.routers')),
-     path('app/',TemplateView.as_view(template_name='index.html', name='index')),
+     path('app/',TemplateView.as_view(template_name='../build/index.html', name='index')),
     
 
 ]
