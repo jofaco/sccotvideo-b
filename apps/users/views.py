@@ -6,6 +6,7 @@ from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.views import TokenObtainPairView
 from rest_framework.permissions import IsAuthenticated
+from django.http import HttpResponse
 
 from apps.users.api.serializers.User_serializers import CustomTokenOptainPairSerializer, CustomUserSerializer
 from apps.users.models import User
@@ -166,4 +167,5 @@ class logout(GenericAPIView):
             return Response(status=status.HTTP_400_BAD_REQUEST)
 
     
-
+def holaMundo(request):
+        return HttpResponse([{'name':"marlong"}])
