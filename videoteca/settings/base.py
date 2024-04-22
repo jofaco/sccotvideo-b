@@ -48,7 +48,9 @@ THIRD_APPS = [
     'allauth',
     'allauth.account',
 ]
-
+CORS_ALLOW_HEADERS = [
+    'access-control-allow-origin',  # Asegúrate de incluir 'access-control-allow-origin' aquí
+]
 INSTALLED_APPS = BASE_APPS + LOCAL_APPS + THIRD_APPS
 
 SWAGGER_SETTINGS = {
@@ -70,8 +72,8 @@ REST_FRAMEWORK = {
 #IsAuthenticatedOrReadOnly
 
 MIDDLEWARE = [
-    'django.middleware.common.CommonMiddleware',
     'corsheaders.middleware.CorsMiddleware', 
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -88,7 +90,10 @@ ROOT_URLCONF = 'videoteca.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR,'build')
+            
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -151,11 +156,8 @@ USE_TZ = True
 
 AUTH_USER_MODEL = 'users.User'
 
-#CORS_ORIGIN_WHITELIST = [
-#    'http://127.0.0.1:5500',
-#    'https://videospruebas1.vcccolombia.com'
-    # Otros orígenes permitidos si es necesario
-#]
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=30),
@@ -179,7 +181,9 @@ STATIC_ROOT = BASE_DIR / 'static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'build/static')
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 

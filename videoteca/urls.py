@@ -7,6 +7,7 @@ from django.views.static import serve
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
+from django.views.generic import TemplateView 
 
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
@@ -35,14 +36,16 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    path('', include('apps.users.api.urls')),
+    path('api/', include('apps.users.api.urls')),
     path('accounts/', include('allauth.urls')),
-    path('', include('apps.videos.api.urls')),
-    path('',include('apps.videos.api.routers')),
-    path('',include('apps.users.api.routers')),
-    path('',include('apps.location.api.routers')),
-    path('',include('apps.notifications.api.routers')),
-    path('',include('apps.series.api.routers')),
+    path('api/', include('apps.videos.api.urls')),
+    path('api/',include('apps.videos.api.routers')),
+    path('api/',include('apps.users.api.routers')),
+    path('api/',include('apps.location.api.routers')),
+    path('api/',include('apps.notifications.api.routers')),
+    path('api/',include('apps.series.api.routers')),
+    path('',TemplateView.as_view(template_name='index.html'))
+
     
 
 ]
