@@ -22,7 +22,7 @@ DATABASES = {
         #production
         'NAME': 'sccotvideo041204',
         'USER':'root',
-        'PASSWORD':'',
+        'PASSWORD':'123Password',
         'HOST':'localhost',
         'PORT':'3306'
     }
