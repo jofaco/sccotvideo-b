@@ -70,7 +70,16 @@ class gustosUserViewset(viewsets.ModelViewSet):
             if serializer.is_valid():
                 serializer.save()
                 return Response({"message": "Preferencia actualizada con exito!"}, status=status.HTTP_200_OK)
-
+    
+    def destroy(self, request, pk=None):
+        gusto = self.get_queryset(pk)
+        if gusto:
+            gusto.delete()
+            return Response({"message": "Preferencia eliminada con éxito!"}, status=status.HTTP_200_OK)
+        return Response(
+            {"error": "No existe una Preferencia con estos datos!"},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 class commentaryViewset(viewsets.ModelViewSet):
     serializer_class = commentarySerializer
 
