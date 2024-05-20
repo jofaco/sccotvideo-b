@@ -15,6 +15,7 @@ class gustosUserSerializer(serializers.ModelSerializer):
     def to_representation(self,instance):
         
         return {
+        'id':instance.id,
         'categoria':instance.categoria.categoria if instance.categoria is not None else '',
         'usuario': instance.usuario.name if instance.usuario is not None else '',
         }
