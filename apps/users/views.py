@@ -58,8 +58,13 @@ class login(TokenObtainPairView):
             db = "sccot"
             usernameOdoo = "desarrollador.web@sccot.org.co" 
             #key = "Codig@2023"
+            #key = "d5fc1c1e9d85cf0827c06f3eb695820df719d641"
+            #url = "https://sccot.odoo.com"
+            #db = "sccot"
+            #usernameOdoo = "desarrollador.web@sccot.org.co" 
+            key = "Codig@2023"
              #key = "009d8fa50f7872c08c233726209a4b8a3af625b0"
-            key = "0c256e03fe71e273993a4c3501722b0384f77627"
+            #key = "0c256e03fe71e273993a4c3501722b0384f77627"
 
             common = xmlrpc.client.ServerProxy('{}/xmlrpc/2/common'.format(url))
             uid = common.authenticate(db,usernameOdoo,key,{})
