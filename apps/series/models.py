@@ -1,12 +1,22 @@
 from django.db import models
+def upload_to(instance, filename):
+    """Define la ruta donde se guardan las imagenes de los videos 
+
+    Args:
+        instance (_type_): _description_
+        filename (_type_): nombre del archivo imagen
+
+    Returns:
+        path: ruta en donde se guarda la imagen
+    """    
+    return 'series/{filename}'.format(filename=filename)
 
 # Create your models here.
 class Serie(models.Model):
     serie = models.CharField('Nombre de la serie', max_length=100)
     description = models.TextField('Descripción de la serie')
     quantity = models.IntegerField('Cantidad de videos', default=0)
-    featured_image = models.TextField('Imagen de la serie', default='')
-
+    featured_image = models.ImageField('Imagen de la serie', default='',upload_to=upload_to, null=True, blank=True,height_field=None, width_field=None, max_length=None)
 
     class Meta:
         """Meta definition for Serie."""

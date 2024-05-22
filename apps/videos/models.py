@@ -108,12 +108,13 @@ class tipoVideo(models.Model):
         return self.tipe_video
 
 class Video(models.Model):
-    code_esp = models.CharField('Código del video en español de vimeo', max_length=150, null=True,blank= True)
-    code_engl = models.CharField('Código del video en ingles de vimeo', max_length=150, null=True,blank= True)
-    title_espanol = models.CharField('Titulo en español', max_length=100)
-    title_english = models.CharField('Titulo en ingles', max_length=100)
-    title_cap_esp = models.CharField('Titulo del capitulo en español', max_length=150, blank= True, null=True)
-    title_cap_english = models.CharField('Titulo del capitulo en ingles', max_length=150, blank= True, null=True)
+    # Cambios en max_length en campos
+    code_esp = models.CharField('Código del video en español de vimeo', max_length=300, null=True,blank= True)
+    code_engl = models.CharField('Código del video en ingles de vimeo', max_length=300, null=True,blank= True)
+    title_espanol = models.CharField('Titulo en español', max_length=500)
+    title_english = models.CharField('Titulo en ingles', max_length=500)
+    title_cap_esp = models.CharField('Titulo del capitulo en español', max_length=300, blank= True, null=True)
+    title_cap_english = models.CharField('Titulo del capitulo en ingles', max_length=300, blank= True, null=True)
     description_esp = models.TextField('Descripción en español', blank= True, null=True)
     description_english = models.TextField('Descripción en ingles', blank= True, null=True)
     upload_date = models.DateTimeField('Fecha de subida', auto_now=False, auto_now_add=True)
