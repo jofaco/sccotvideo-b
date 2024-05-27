@@ -55,7 +55,9 @@ class login(TokenObtainPairView):
 
             # Credenciales Odoo para conexion
             url = "https://sccot.odoo.com"
-            db = "sccot"
+            db = "sccot-master-6280105"
+            #url = "https://sccot-tests-0305-12088670.dev.odoo.com"
+            #db = "sccot-tests-0305-12088670"
             usernameOdoo = "desarrollador.web@sccot.org.co" 
             #key = "Codig@2023"
             #key = "d5fc1c1e9d85cf0827c06f3eb695820df719d641"
@@ -82,7 +84,7 @@ class login(TokenObtainPairView):
                 print(contact_details[0]["name"])
                 if contact_details[0]["x_studio_estado_del_miembro"] == "Al día":
                     hashed_password = make_password(password)
-                    print(hashed_password)
+                    print(hashed_password) #Cambiar el contact detail de email a name user
                     created = User.objects.get_or_create(username=contact_details[0]["email"],name=contact_details[0]["email"], defaults={'email': contact_details[0]["email"], 'password': hashed_password})
                     userMod = authenticate(
                         username = email_search,
