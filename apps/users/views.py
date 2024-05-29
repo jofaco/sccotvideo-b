@@ -35,6 +35,7 @@ class login(TokenObtainPairView):
         )
         if user:
             print("Usuario ya existente. validacion 1")
+            
             login_serializer = self.serializer_class(data= request.data)
 
             if login_serializer.is_valid():
@@ -64,7 +65,7 @@ class login(TokenObtainPairView):
             #url = "https://sccot.odoo.com"
             #db = "sccot"
             #usernameOdoo = "desarrollador.web@sccot.org.co" 
-            key = "Codig@2023"
+            key = "ff15f623ef77dbfccd570420830edd64f9334c5a"
              #key = "009d8fa50f7872c08c233726209a4b8a3af625b0"
             #key = "0c256e03fe71e273993a4c3501722b0384f77627"
 
