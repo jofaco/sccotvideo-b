@@ -14,15 +14,15 @@ from apps.users.models import User
 import xmlrpc.client
 
 # PROD
-url = "https://sccot.odoo.com"
-db = "sccot-master-6280105"
-usernameOdoo = "desarrollador.web@sccot.org.co" 
-key = "ff15f623ef77dbfccd570420830edd64f9334c5a"
-# PRUEBAS
-#url = "https://sccot-tests-0305-12088670.dev.odoo.com"
-#db = "sccot-tests-0305-12088670"
+#url = "https://sccot.odoo.com"
+#db = "sccot-master-6280105"
 #usernameOdoo = "desarrollador.web@sccot.org.co" 
-#key = "2023"
+#key = "ff15f623ef77dbfccd570420830edd64f9334c5a"
+# PRUEBAS
+url = "https://sccot-tests-0305-12088670.dev.odoo.com"
+db = "sccot-tests-0305-12088670"
+usernameOdoo = "desarrollador.web@sccot.org.co" 
+key = "2023"
 
 class login(TokenObtainPairView):
     serializer_class = CustomTokenOptainPairSerializer
@@ -77,50 +77,10 @@ class login(TokenObtainPairView):
                         return Response({'error':'Algun dato esta mal ingresado'}, status=status.HTTP_400_BAD_REQUEST)
                 else:
                     print("No esta al dia por favor volver a iniciar sesion ")
-                    return Response({'error':'Lo sentimos no es posible el acceso con tu estado de miembro actual'}, status=status.HTTP_400_BAD_REQUEST)
+                    return Response({'error':'No esta al dia por favor contactarse con inscripciones@sccot.org.co'}, status=status.HTTP_400_BAD_REQUEST)
             
-                # IF ES SUPERUSUARIO SOLAMENTE VALIDAR EL ACCESO SIN PASAR POR ODOO
-            else:
-                print("validar si aqui el usuario es superUsuaior?")
-                
-                login_serializer = self.serializer_class(data= request.data)
-                if login_serializer.is_valid():
-                    print("fue valid el login serializer")
-                    user_serializer = CustomUserSerializer(user)
-                    print(user_serializer.data.get("is_superuser"))
-                    if user_serializer.data.get("is_superuser"):
-                        print("si es un super user aqui")
-                        return Response({
-                            'access_token': login_serializer.validated_data.get('access'),
-                            'refresh_token': login_serializer.validated_data.get('refresh'),
-                            'user': user_serializer.data,
-                            'message':'¡Bienvenido Administrador!'
-                        }, status=status.HTTP_200_OK) 
-                    else:
-                        print("SEGUIMOS NO ERA UN SUPERUSER")
-    # -------------------------------------------------------------------------------------------------------
+                # -----------------------------------------
         else:
-            print("validar si aqui el usuario es superUsuaior? en el else")
-            # VALIDACION SUPER USAURIO
-            login_serializer = self.serializer_class(data= request.data)
-            if login_serializer.is_valid():
-                print("paso por el if del login serializer")
-                user = login_serializer.validated_data.get('user')
-                if user.is_superuser:
-                    print("EL USUARIO ES UN SUPERUSER")
-
-                    login_serializer = self.serializer_class(data= request.data)
-                    if login_serializer.is_valid():
-
-                        user_serializer = CustomUserSerializer(user)
-                        return Response({
-                            'access_token': login_serializer.validated_data.get('access'),
-                            'refresh_token': login_serializer.validated_data.get('refresh'),
-                            'user': user_serializer.data,
-                            'message':'Inicio de sesión exitoso!'
-                        }, status=status.HTTP_200_OK) 
-                print("SEGUIMOS NO ERA UN SUPERUSER")
-            # VALIDACION SUPER USAURIO
             # El usuario no existe en la base de datos de sccotview
             print("se ejecuto el else de aqui porque no existia el usuario en db")
             
@@ -189,7 +149,7 @@ class login(TokenObtainPairView):
                     print("Todavia no estas al dia por favor pagar anualidad del año", password, "not found.")
                     return Response({'error':'Todavia no estas al dia por favor pagar anualidad del año'}, status=status.HTTP_400_BAD_REQUEST)
             else:
-                return Response({'error':'Lo sentimos no te encontramos, valida los datos ingresados por favor'}, status=status.HTTP_400_BAD_REQUEST)
+                return Response({'error':'Lo sentimos no te encontramos, por favor contactarse al correo inscripciones@sccot.org.co'}, status=status.HTTP_400_BAD_REQUEST)
             # -----------------------------------------
            
             # Si el usuario se creó, created será True; de lo contrario, será False
