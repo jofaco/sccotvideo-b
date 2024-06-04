@@ -152,6 +152,7 @@ class login(TokenObtainPairView):
                             contact_details[0]["x_studio_categora_del_miembro"][1] == "Correspondiente" or
                             contact_details[0]["x_studio_categora_del_miembro"][1] == "Residente" or
                             contact_details[0]["x_studio_categora_del_miembro"][1] == "Adherente" or
+                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Internacional" or
                             contact_details[0]["x_studio_categora_del_miembro"][1] == "Correspondiente Colombiano"
                         ) and
                         (
