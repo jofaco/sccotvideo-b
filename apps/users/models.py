@@ -38,7 +38,7 @@ class User(AbstractBaseUser , PermissionsMixin):
 
     username = models.CharField(max_length = 255, unique = True)
     name = models.CharField('Nombre completo', max_length = 255, blank = True, null = True)
-    #name_odoo = models.CharField('Nombre Odoo',max_length= 255, blank = True, null = True) # Nueva linea ya que el name se usa como usuario en login
+    name_odoo = models.CharField('Nombre Odoo',max_length= 255, blank = True, null = True) # Nueva linea ya que el name se usa como usuario en login
     email = models.EmailField('Correo Electrónico',max_length = 255, unique = True)
     user_url = models.CharField('url del usuario', max_length = 255, blank = True, null = True)
     is_superuser = models.BooleanField(default = False)

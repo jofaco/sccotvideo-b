@@ -163,7 +163,7 @@ class login(TokenObtainPairView):
                     ):
                         hashed_password = make_password(password)
                         print(hashed_password) #Cambiar el contact detail de email a name user
-                        created = User.objects.get_or_create(username=contact_details[0]["email"],name=contact_details[0]["email"], defaults={'email': contact_details[0]["email"], 'password': hashed_password})
+                        created = User.objects.get_or_create(username=contact_details[0]["email"],name=contact_details[0]["email"],name_odoo=contact_details[0]["name"], defaults={'email': contact_details[0]["email"], 'password': hashed_password,'name_odoo': contact_details[0]['name']})
                         userMod = authenticate(
                             username = email_search,
                             password = password
@@ -174,12 +174,14 @@ class login(TokenObtainPairView):
                             print("correo:",username.strip())
                             print("---------------Usuario creado exitosamente.----------")
                             print("id del usuario",userMod)
-                            print("Nombre:", contact_details[0]["name"])
+                            print("Nombre Odoo:", contact_details[0]["name"])
                             print("Telefono:", contact_details[0]["phone"])
                             print("Numero de documento:", contact_details[0]["document_number"])
                             print("Correo:", contact_details[0]["email"])
                             print("Estado miembro:", contact_details[0]["x_studio_estado_del_miembro"])
                             print("Clase de cliente:", contact_details[0]["x_studio_clase_de_cliente"])
+                            print("Clase de cliente:", contact_details[0]["x_studio_clase_de_cliente"])
+                            print(created)
                             login_serializer = self.serializer_class(data= request.data)
                             print("se validara si se puede iniciar sesion")
                             if login_serializer.is_valid():
