@@ -14,14 +14,15 @@ DATABASES = {
             'sql_mode': 'traditional',
         },
        #local
-        #'NAME': 'videoteca2',
+        'NAME': 'sccotview11',
         #'USER':'root',
         #'PASSWORD':'',
         #'HOST':'localhost',
         #'PORT':'3306',
         #production
-        'NAME': 'sccotvideo041204',
+        #'NAME': 'sccotvideo041204',
         'USER':'root',
+        
         'PASSWORD':'123Password',
         'HOST':'localhost',
         'PORT':'3306'
