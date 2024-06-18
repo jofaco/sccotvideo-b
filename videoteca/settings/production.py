@@ -14,7 +14,7 @@ DATABASES = {
             'sql_mode': 'traditional',
         },
        #local
-        'NAME': 'sccotview11',
+        'NAME': 'sccotvideo041204',
         #'USER':'root',
         #'PASSWORD':'',
         #'HOST':'localhost',
