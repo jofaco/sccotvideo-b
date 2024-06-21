@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from apps.videos.models import Categoria, Idioma, Video, Especialidad , subEspecialidad , palabraClave
+from apps.videos.models import Categoria, Idioma, Video, Especialidad , subEspecialidad , palabraClave, autor
 from apps.series.api.serializers import *
 from apps.videos.api.serializers.general_serializers import (
     CategoriaSerializerV,
@@ -11,6 +11,8 @@ from apps.videos.api.serializers.general_serializers import (
     EspecialidadSerializerV,
     SubEspecialidadSerializer,
     SubEspecialidadSerializerV,
+    AutorSerializer,
+    AutorSerializerV,
     PalabraClaveSerializer,
     PalabraClaveSerializerV,
    
@@ -24,6 +26,7 @@ class VideoSerializer(serializers.ModelSerializer):
     categorias = CategoriaSerializerV(many=True, queryset=Categoria.objects.all())
     especialidad = EspecialidadSerializerV(many=True, queryset=Especialidad.objects.all())
     subEspecialidad = SubEspecialidadSerializerV(many=True, queryset=subEspecialidad.objects.all())
+    autor = AutorSerializerV(many=True, queryset=autor.objects.all())
     palabraClave = PalabraClaveSerializerV(many=True, queryset=palabraClave.objects.all())
 
     class Meta:
@@ -52,6 +55,7 @@ class VideoSerializer(serializers.ModelSerializer):
             "languages",
             "especialidad",
             "subEspecialidad",
+            "autor",
             "palabraClave",
             "serie",
             "temporada",
@@ -62,6 +66,7 @@ class VideoSerializer(serializers.ModelSerializer):
         categorias = validated_data.pop("categorias")
         especialidad = validated_data.pop("especialidad")
         subEspecialidad = validated_data.pop("subEspecialidad")
+        autor = validated_data.pop("autor")
         palabraClave = validated_data.pop("palabraClave")
 
         idioms = validated_data.pop("languages")
@@ -81,6 +86,9 @@ class VideoSerializer(serializers.ModelSerializer):
         for j in subEspecialidad:
             instance.subEspecialidad.add(j.id) # se guarda la relacion m2m
 
+        for j in autor:
+            instance.autor.add(j.id) # se guarda la relacion m2m
+
         for j in palabraClave:
             instance.palabraClave.add(j.id) # se guarda la relacion m2m
 
@@ -95,6 +103,7 @@ class VideoSerializer2(serializers.ModelSerializer):
     categorias = CategoriaSerializer(many=True)
     especialidad = EspecialidadSerializer(many=True)
     subEspecialidad = SubEspecialidadSerializer(many=True)
+    autor = AutorSerializer(many=True)
     palabraClave = PalabraClaveSerializer(many=True)
 
 
@@ -125,6 +134,7 @@ class VideoSerializer2(serializers.ModelSerializer):
             "languages",
             "especialidad",
             "subEspecialidad",
+            "autor",
             "palabraClave",
             "temporada",
             "serie",

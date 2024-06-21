@@ -11,6 +11,8 @@ class especialidadAdmin(admin.ModelAdmin):
 
 class subEspecialidadAdmin(admin.ModelAdmin):
     list_display = ('id','subEspecialidad')
+class autorAdmin(admin.ModelAdmin):
+    list_display = ('id','autor')
 
 class palabraClaveAdmin(admin.ModelAdmin):
     list_display = ('id','palabraClave')
@@ -29,6 +31,7 @@ admin.site.register(tipoVideo,tipoVideoAdmin)
 admin.site.register(Video)
 admin.site.register(Especialidad,especialidadAdmin)
 admin.site.register(subEspecialidad,subEspecialidadAdmin)
+admin.site.register(autor,autorAdmin)
 admin.site.register(palabraClave,palabraClaveAdmin)
 
 

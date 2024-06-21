@@ -288,6 +288,14 @@ class subEspecialidadViewset(viewsets.ModelViewSet):
         queryset = subEspecialidad.objects.all()
         return queryset
 
+class autorViewset(viewsets.ModelViewSet):
+ 
+    serializer_class = AutorSerializer
+
+    def get_queryset(self):
+        queryset = autor.objects.all()
+        return queryset
+
 class palabraClaveViewset(viewsets.ModelViewSet):
  
     serializer_class = PalabraClaveSerializer

@@ -1,4 +1,4 @@
-from apps.videos.models import Categoria, Idioma, tipoVideo, Especialidad, subEspecialidad, palabraClave
+from apps.videos.models import Categoria, Idioma, tipoVideo, Especialidad, subEspecialidad, palabraClave, autor
 
 from rest_framework import serializers
 
@@ -49,6 +49,15 @@ class SubEspecialidadSerializer(serializers.ModelSerializer):
 class SubEspecialidadSerializerV(serializers.PrimaryKeyRelatedField, serializers.ModelSerializer):
     class Meta:
         model = subEspecialidad
+        fields = "__all__"
+class AutorSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = autor
+        fields = "__all__"
+
+class AutorSerializerV(serializers.PrimaryKeyRelatedField, serializers.ModelSerializer):
+    class Meta:
+        model = autor
         fields = "__all__"
 
 class PalabraClaveSerializer(serializers.ModelSerializer):

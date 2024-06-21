@@ -45,6 +45,7 @@ class VideoViewSet(viewsets.ModelViewSet):
                 .prefetch_related("categorias")
                 .prefetch_related("especialidad")
                 .prefetch_related("subEspecialidad")
+                .prefetch_related("autor")
                 .prefetch_related("palabraClave")
 
 
@@ -57,6 +58,7 @@ class VideoViewSet(viewsets.ModelViewSet):
                 .prefetch_related("categorias")
                 .prefetch_related("especialidad")
                 .prefetch_related("subEspecialidad")
+                .prefetch_related("autor")
                 .prefetch_related("palabraClave")
 
                 .first()

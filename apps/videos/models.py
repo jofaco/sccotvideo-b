@@ -68,6 +68,19 @@ class subEspecialidad(models.Model):
         """Unicode representation of subEspecialidad."""
         return self.subEspecialidad
     
+class autor(models.Model):
+    autor = models.CharField('autor', max_length=50)
+
+    class Meta:
+        """Meta definition for autor."""
+
+        verbose_name = 'autor del video'
+        verbose_name_plural = 'autor del video'
+
+    def __str__(self):
+        """Unicode representation of autor."""
+        return self.autor
+    
 class palabraClave(models.Model):
     
     palabraClave = models.CharField(max_length=45)
@@ -130,6 +143,7 @@ class Video(models.Model):
     categorias = models.ManyToManyField(Categoria, related_name="Categorias", verbose_name="Categorias")
     especialidad = models.ManyToManyField(Especialidad, related_name="Especialidades", verbose_name="Especialidades")
     subEspecialidad = models.ManyToManyField(subEspecialidad, related_name="subEspecialidades", verbose_name="subEspecialidades")
+    autor = models.ManyToManyField(autor, related_name="autores", verbose_name="autores")
     languages = models.ManyToManyField(Idioma, related_name="Idiomas", verbose_name='Idiomas')
     palabraClave = models.ManyToManyField(palabraClave, related_name="palabrasClaves", verbose_name='palabrasClaves', blank=True)
     keywords = models.ManyToManyField(Keywords, related_name="Keywords", verbose_name='Keywords', blank=True)
@@ -154,6 +168,8 @@ class Video(models.Model):
     
     def get_subEspecialidades_video(self):
         return subEspecialidad.objects.filter(subEspecialidad = self)
+    def get_autor_video(self):
+        return autor.objects.filter(autor = self)
 
     def get_palabrasClaves_video(self):
         return palabraClave.objects.filter(palabraClave = self)
