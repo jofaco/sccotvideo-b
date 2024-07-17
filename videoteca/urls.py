@@ -36,6 +36,7 @@ urlpatterns = [
     re_path(r'^seeVideo/', TemplateView.as_view(template_name='index.html')),
     re_path(r'^seeTemporada/', TemplateView.as_view(template_name='index.html')),
     re_path(r'^VideoForm/', TemplateView.as_view(template_name='index.html')),
+    re_path(r'^updateVideo/', TemplateView.as_view(template_name='index.html')),
     re_path(r'^seeSerie/', TemplateView.as_view(template_name='index.html')),
     re_path(r'^Series/', TemplateView.as_view(template_name='index.html')),
     re_path(r'^Videos/', TemplateView.as_view(template_name='index.html')),
