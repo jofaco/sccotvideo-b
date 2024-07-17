@@ -34,6 +34,8 @@ urlpatterns = [
     re_path(r'^loginuser/', TemplateView.as_view(template_name='index.html')),
     re_path(r'^logout/', TemplateView.as_view(template_name='index.html')),
     re_path(r'^seeVideo/', TemplateView.as_view(template_name='index.html')),
+    re_path(r'^seeTemporada/', TemplateView.as_view(template_name='index.html')),
+    re_path(r'^VideoForm/', TemplateView.as_view(template_name='index.html')),
     re_path(r'^seeSerie/', TemplateView.as_view(template_name='index.html')),
     re_path(r'^Series/', TemplateView.as_view(template_name='index.html')),
     re_path(r'^Videos/', TemplateView.as_view(template_name='index.html')),
@@ -54,9 +56,6 @@ urlpatterns = [
     path('api/',include('apps.notifications.api.routers')),
     path('api/',include('apps.series.api.routers')),
     path('',TemplateView.as_view(template_name='index.html'))
-
-    
-
 ]
 
 if settings.DEBUG:
