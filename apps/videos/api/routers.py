@@ -6,7 +6,7 @@ from apps.videos.api.viewsets.video_views import VideoViewSet
 router = DefaultRouter()
 
 router.register(r'videos',VideoViewSet, basename = 'videos')
-router.register(r'videostemporada/<int:id/>',VideoViewSet, basename = 'videos')
+router.register(r'videostemporada/<int:id/>',VideoViewSet, basename = 'videostemporadas')
 
 router.register(r'categorias',categoriaViewset, basename = 'categorias')
 router.register(r'especialidades',especialidadViewset, basename = 'especialidades')

@@ -16,7 +16,7 @@ DATABASES = {
        #local
         'NAME': 'sccotvideo041204', 
         #'USER':'root',
-        #'PASSWORD':'',
+        #'PASSWORD':'123',
         #'HOST':'localhost',
         #'PORT':'3306',
         #production

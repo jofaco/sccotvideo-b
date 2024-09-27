@@ -6,6 +6,7 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.permissions import (
     IsAuthenticated,
+    AllowAny
 )
 from rest_framework.parsers import FileUploadParser, MultiPartParser, FormParser
 
@@ -23,7 +24,7 @@ from apps.videos.models import Video
 class VideoViewSet(viewsets.ModelViewSet):
     
     serializer_class = VideoSerializer2
-    permission_classes = [IsAuthenticated]
+    
 
     def get_object(self, pk):
         return get_object_or_404(self.model, pk=pk)

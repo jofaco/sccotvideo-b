@@ -119,7 +119,7 @@ class commentaryViewset(viewsets.ModelViewSet):
                 {"error": "No existe un comentario con estos datos!"},
                 status=status.HTTP_404_NOT_FOUND,
             )
-
+        
     def retrieve(self, request, pk=None):
         commentary = self.get_queryset(pk)
         if commentary:

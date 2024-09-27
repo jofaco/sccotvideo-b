@@ -59,9 +59,10 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
-    #'DEFAULT_PERMISSION_CLASSES': (
-    #    'rest_framework.permissions.IsAuthenticated',
-    #)
+    # Si se descomenta estariamos diciendo que todas las vistas necesitan autenticacion
+    'DEFAULT_PERMISSION_CLASSES': (
+       'rest_framework.permissions.IsAuthenticated',
+    )
 }
 #permissions:
 #AllowAny
@@ -129,7 +130,10 @@ AUTH_PASSWORD_VALIDATORS = [
 CORS_ALLOW_METHODS = [
     'GET',
     'POST',
-    'OPTIONS', # Asegúrate de incluir OPTIONS si quieres permitir preflight requests
+    'PUT',
+    'PATCH',
+    'DELETE',
+    'OPTIONS',
 ]
 CORS_ALLOW_HEADERS = [
     'Origin',
