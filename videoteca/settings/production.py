@@ -1,7 +1,7 @@
 from .base import *
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 # Database
@@ -14,13 +14,13 @@ DATABASES = {
             'sql_mode': 'traditional',
         },
        #local
-        'NAME': 'sccotvideo041204',
+        #'NAME': 'sccotvideo041204',
         #'USER':'root',
         #'PASSWORD':'123',
         #'HOST':'localhost',
         #'PORT':'3306',
         #production
-        #'NAME': 'sccotvideo041204',
+        'NAME': 'sccotvideo041204',
         'USER':'root',
         'PASSWORD':'123Password',
         'HOST':'localhost',

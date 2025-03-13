@@ -8,6 +8,10 @@ from apps.videos.models import Idioma, tipoVideo, Categoria
 from apps.videos.api.serializers.general_serializers import *
 from apps.videos.api.serializers.historial_serializers import *
 
+
+import xmlrpc.client
+from rest_framework import viewsets
+
 import json
 class categoriaViewset(viewsets.ModelViewSet):
     """Clase para el control del modelo Categoria
@@ -288,13 +292,82 @@ class subEspecialidadViewset(viewsets.ModelViewSet):
         queryset = subEspecialidad.objects.all()
         return queryset
 
-class autorViewset(viewsets.ModelViewSet):
+# class autorViewset(viewsets.ModelViewSet):
  
-    serializer_class = AutorSerializer
+#     serializer_class = AutorSerializer
 
-    def get_queryset(self):
-        queryset = autor.objects.all()
-        return queryset
+#     def get_queryset(self):
+#         queryset = autor.objects.all()
+#         return queryset
+    
+
+class autorViewset(viewsets.ViewSet):  
+    url = "https://sccot.odoo.com"
+    db = "sccot-master-6280105"
+    usernameOdoo = "desarrollador.web@sccot.org.co"
+    key = "ff15f623ef77dbfccd570420830edd64f9334c5a"
+
+    def list(self, request):
+        try:
+            # Obtener autores locales
+            queryset = autor.objects.all().values("id", "autor")
+            local_authors = list(queryset) 
+
+            # Conectar con Odoo
+            common = xmlrpc.client.ServerProxy(f"{self.url}/xmlrpc/2/common")
+            uid = common.authenticate(self.db, self.usernameOdoo, self.key, {})
+
+            odoo_data = []
+            if uid:
+                models = xmlrpc.client.ServerProxy(f"{self.url}/xmlrpc/2/object")
+                search_domain = [('x_studio_clase_de_cliente', 'in', ["Miembro", "No Miembro", "Registro"])]
+                odoo_contacts = models.execute_kw(
+                    self.db, uid, self.key, 'res.partner', 'search_read',
+                    [search_domain], {'fields': ['id', 'name']}
+                )
+
+                for contact in odoo_contacts:
+                    odoo_data.append({"id": contact['id'], "autor": contact.get("name", "Desconocido")})
+
+            # Combinar datos de Django y Odoo
+            combined_data = local_authors + odoo_data
+            return Response(combined_data, status=status.HTTP_200_OK)
+
+        except Exception as e:
+            print("🔥 ERROR en list:", str(e))
+            print(traceback.format_exc())  
+            return Response({'error': 'No se pudo obtener datos'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+    def retrieve(self, request, pk=None):
+        try:
+            # Normalizar el nombre del autor eliminando espacios extras y haciendo la búsqueda insensible a mayúsculas
+            autor_local = autor.objects.filter(autor__iexact=pk.strip()).first()
+
+            if autor_local:
+                return Response({"id": autor_local.id, "autor": autor_local.autor}, status=status.HTTP_200_OK)
+            
+            return Response({"error": "Autor no encontrado"}, status=status.HTTP_404_NOT_FOUND)
+        
+        except Exception as e:
+            return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+    def create(self, request):
+        try:
+            data = request.data
+            autor_id = data.get("id")  # Obtener el ID del autor si viene en la petición
+            autor_nombre = data.get("autor")  # Obtener el nombre del autor
+
+            # Validar si el autor con ese ID ya existe
+            if autor_id and autor.objects.filter(id=autor_id).exists():
+                return Response({"message": "El autor ya existe", "id": autor_id}, status=status.HTTP_200_OK)
+
+            # Si no existe, crearlo
+            nuevo_autor = autor.objects.create(id=autor_id, autor=autor_nombre)
+            return Response({"id": nuevo_autor.id, "autor": nuevo_autor.autor}, status=status.HTTP_201_CREATED)
+
+        except Exception as e:
+            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
 class palabraClaveViewset(viewsets.ModelViewSet):
  
