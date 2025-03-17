@@ -85,6 +85,11 @@ class login(TokenObtainPairView):
                             contact_details[0]["x_studio_clase_de_cliente"][1] == "Miembro" or
                             contact_details[0]["x_studio_clase_de_cliente"][1] == "Registro"
                         )
+                            or
+                        (
+                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Correspondiente" or
+                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Correspondiente Colombiano" 
+                        )
                     ):
 
                     login_serializer = self.serializer_class(data= request.data)
@@ -159,6 +164,12 @@ class login(TokenObtainPairView):
                         (
                             contact_details[0]["x_studio_clase_de_cliente"][1] == "Miembro" or
                             contact_details[0]["x_studio_clase_de_cliente"][1] == "Registro"
+                        )
+                         or
+                        (
+                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Correspondiente" or
+                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Correspondiente Colombiano"
+
                         )
                     ):
                         hashed_password = make_password(password)
