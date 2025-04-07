@@ -15,14 +15,14 @@ DATABASES = {
         },
        #local
         #'NAME': 'sccotvideo041204',
-        #'USER':'root',
+        'USER':'root',
         #'PASSWORD':'',
         #'HOST':'localhost',
         #'PORT':'3306',
         #production
         'NAME': 'sccotvideo041204',
         'USER':'root',
-        'PASSWORD':'123Password',
+        #'PASSWORD':'123Password',
         'HOST':'localhost',
         'PORT':'3306'
     }

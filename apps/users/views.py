@@ -21,17 +21,9 @@ class login(TokenObtainPairView):
         # Credenciales Odoo para conexion
         url = "https://sccot.odoo.com"
         db = "sccot-master-6280105"
-        #url = "https://sccot-tests-0305-12088670.dev.odoo.com"
-        #db = "sccot-tests-0305-12088670"
         usernameOdoo = "desarrollador.web@sccot.org.co" 
-        #key = "Codig@2023"
-        #key = "d5fc1c1e9d85cf0827c06f3eb695820df719d641"
-        #url = "https://sccot.odoo.com"
-        #db = "sccot"
-        #usernameOdoo = "desarrollador.web@sccot.org.co" 
         key = "ff15f623ef77dbfccd570420830edd64f9334c5a"
-        #key = "009d8fa50f7872c08c233726209a4b8a3af625b0"
-        #key = "0c256e03fe71e273993a4c3501722b0384f77627"
+   
         """Metodo para realizar el login por parte del usuario
 
         Args.
@@ -68,29 +60,22 @@ class login(TokenObtainPairView):
             if contact_ids:
                 contact_details = models.execute_kw(db, uid, key, 'res.partner', 'read', [contact_ids[0]])
                 # Validamos si el usuario esta Al día en odoo
+                print(contact_details[0]["x_studio_clase_de_cliente"][1])
                 # Validar categoria del miembro etc
                 if (
+                    contact_details[0]["x_studio_clase_de_cliente"][1] in ["Empleado"] or
+                    contact_details[0]["x_studio_categora_del_miembro"][1] in ["Correspondiente", "Correspondiente Colombiano"] or
+                    (
                         contact_details[0]["x_studio_estado_del_miembro"] == "Al día" and
-                        (
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Titular" or
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Titular Senior" or
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Honorario" or
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Correspondiente" or
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Residente" or
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Adherente" or
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Internacional" or
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Correspondiente Colombiano"
-                        ) and
-                        (
-                            contact_details[0]["x_studio_clase_de_cliente"][1] == "Miembro" or
-                            contact_details[0]["x_studio_clase_de_cliente"][1] == "Registro"
-                        )
-                            or
-                        (
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Correspondiente" or
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Correspondiente Colombiano" 
-                        )
-                    ):
+                        contact_details[0]["x_studio_clase_de_cliente"][1] in ["Miembro", "Registro"] and
+                        contact_details[0]["x_studio_categora_del_miembro"][1] in [
+                            "Titular", "Titular Senior", "Honorario", 
+                            "Residente", "Adherente", "Internacional"
+                        ]
+                    )
+                ):
+                    # Aquí va el código que se ejecuta si se cumple la condición
+
 
                     login_serializer = self.serializer_class(data= request.data)
                     # Si el usuario esta al dia se realiza validacion de login
@@ -147,31 +132,22 @@ class login(TokenObtainPairView):
 
             if contact_ids:
                 contact_details = models.execute_kw(db, uid, key, 'res.partner', 'read', [contact_ids[0]])
-                print(contact_details[0]["name"])
+                print("Clase",contact_details[0]["x_studio_clase_de_cliente"][1])
                 if contact_details:
                     if (
+                    contact_details[0]["x_studio_clase_de_cliente"][1] in ["Empleado"] or
+                    contact_details[0]["x_studio_categora_del_miembro"][1] in ["Correspondiente", "Correspondiente Colombiano"] or
+                    (
                         contact_details[0]["x_studio_estado_del_miembro"] == "Al día" and
-                        (
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Titular" or
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Titular Senior" or
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Honorario" or
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Correspondiente" or
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Residente" or
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Adherente" or
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Internacional" or
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Correspondiente Colombiano"
-                        ) and
-                        (
-                            contact_details[0]["x_studio_clase_de_cliente"][1] == "Miembro" or
-                            contact_details[0]["x_studio_clase_de_cliente"][1] == "Registro"
-                        )
-                         or
-                        (
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Correspondiente" or
-                            contact_details[0]["x_studio_categora_del_miembro"][1] == "Correspondiente Colombiano"
+                        contact_details[0]["x_studio_clase_de_cliente"][1] in ["Miembro", "Registro"] and
+                        contact_details[0]["x_studio_categora_del_miembro"][1] in [
+                            "Titular", "Titular Senior", "Honorario", 
+                            "Residente", "Adherente", "Internacional"
+                        ]
+                    )
+                ):
+                    # Aquí va el código que se ejecuta si se cumple la condición
 
-                        )
-                    ):
                         hashed_password = make_password(password)
                         print(hashed_password) #Cambiar el contact detail de email a name user
                         created = User.objects.get_or_create(username=contact_details[0]["email"],name=contact_details[0]["email"],name_odoo=contact_details[0]["name"], defaults={'email': contact_details[0]["email"], 'password': hashed_password,'name_odoo': contact_details[0]['name']})
