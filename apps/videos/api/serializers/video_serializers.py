@@ -97,16 +97,14 @@ class VideoSerializer(serializers.ModelSerializer):
 
 #serializer for list and retrieve
 class VideoSerializer2(serializers.ModelSerializer):
-    tipe_of_video = tipoVideoSerializer
-    temporada = temporadaSerializer
+    tipe_of_video = tipoVideoSerializer()
+    temporada = temporadaSerializer()
     languages = IdiomaSerializer(many=True)
     categorias = CategoriaSerializer(many=True)
     especialidad = EspecialidadSerializer(many=True)
     subEspecialidad = SubEspecialidadSerializer(many=True)
     autor = AutorSerializer(many=True)
     palabraClave = PalabraClaveSerializer(many=True)
-
-
 
     class Meta:
         model = Video
@@ -139,3 +137,10 @@ class VideoSerializer2(serializers.ModelSerializer):
             "temporada",
             "serie",
         ]
+
+class VideoSerializerPublic(VideoSerializer2):
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+        representation.pop("code_esp", None)
+        representation.pop("code_engl", None)
+        return representation

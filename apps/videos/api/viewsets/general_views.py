@@ -8,12 +8,15 @@ from apps.videos.models import Idioma, tipoVideo, Categoria
 from apps.videos.api.serializers.general_serializers import *
 from apps.videos.api.serializers.historial_serializers import *
 
-
+from rest_framework.permissions import (
+    AllowAny
+)
 import xmlrpc.client
 from rest_framework import viewsets
 
 import json
 class categoriaViewset(viewsets.ModelViewSet):
+
     """Clase para el control del modelo Categoria
 
     Parameters.
@@ -24,7 +27,7 @@ class categoriaViewset(viewsets.ModelViewSet):
         queryset: Retorna un objeto del modelo Categoria
     """    
     serializer_class = CategoriaSerializer
-
+    permission_classes = [AllowAny]
     def get_queryset(self):
         queryset = Categoria.objects.all()
         return queryset
