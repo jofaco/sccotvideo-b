@@ -155,7 +155,7 @@ class VideoPublicViewSet(viewsets.ReadOnlyModelViewSet):
         Returns.
             Response: Respuesta con la data y el estado de la respuesta (200 OK)
         """
-        video_serializer = self.serializer_class(self.get_queryset().filter(tipe_of_video_id = 3), many=True)
+        video_serializer = self.serializer_class(self.get_queryset().filter(tipe_of_video_id = 13), many=True)
         data = {
             "total": self.get_queryset().count(),
             "videos": video_serializer.data,
