@@ -102,7 +102,7 @@ class VideoPublicViewSet(viewsets.ReadOnlyModelViewSet):
         return Response(data, status=status.HTTP_200_OK)
     @action(detail=False, methods=['get'], url_path='webinars')
     def listWebinars(self, request):
-        videos = self.get_queryset().filter(categorias__id=2)
+        videos = self.get_queryset().filter(categorias__id=13)
         video_serializer = self.serializer_no_public_class(videos, many=True)
         data = {
             "total": videos.count(),
@@ -155,7 +155,7 @@ class VideoPublicViewSet(viewsets.ReadOnlyModelViewSet):
         Returns.
             Response: Respuesta con la data y el estado de la respuesta (200 OK)
         """
-        video_serializer = self.serializer_class(self.get_queryset().filter(tipe_of_video_id = 13), many=True)
+        video_serializer = self.serializer_class(self.get_queryset().filter(tipe_of_video_id = 3), many=True)
         data = {
             "total": self.get_queryset().count(),
             "videos": video_serializer.data,
