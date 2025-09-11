@@ -7,24 +7,40 @@ ALLOWED_HOSTS = ["*"]
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+
+
+# PARA PRODUCCION
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'OPTIONS': {
+#             'sql_mode': 'traditional',
+#         },
+#        #local
+#         'NAME': 'sccotvideo041204',
+#         'USER':'root',
+#         #'HOST':'localhost',
+#         #'PORT':'3306',
+#         #production
+#         #'NAME': 'sccotvideo0122024',
+#         'USER':'root',
+#         'PASSWORD':'',
+#         #'PASSWORD':'123Password',
+#         'HOST':'localhost',
+#         'PORT':'3306'
+#     }
+# }
+
+# PARA DESARROLLO
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'sql_mode': 'traditional',
-        },
-       #local
-        #'NAME': 'sccotvideo041204',
-        'USER':'root',
-        #'PASSWORD':'',
-        #'HOST':'localhost',
-        #'PORT':'3306',
-        #production
+        'ENGINE': 'mysql.connector.django',
         'NAME': 'sccotvideo041204',
-        'USER':'root',
-        'PASSWORD':'123Password',
-        'HOST':'localhost',
-        'PORT':'3306'
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
